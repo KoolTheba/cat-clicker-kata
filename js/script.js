@@ -49,7 +49,7 @@ kittenListSlctr.innerHTML = navbarContent;
 
 // Click counter
 document.querySelector('.main').addEventListener('click', evt => {
-  if(evt.target.nodeName === 'IMG'){
+  if(evt.target.nodeName === 'IMG') {
         const countSlctr = event.target.parentNode.querySelector(".count")
         let counter = parseInt(countSlctr.innerText);
         countSlctr.innerText = counter + 1;
