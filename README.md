@@ -36,6 +36,7 @@ Si quieres, puedes tratar de documentar la función que tendrás del contador. M
 - [Atributos data](https://cybmeta.com/los-atributos-data-y-el-dataset-api)
 - [Delegación de eventos](https://ed.team/blog/como-usar-la-delegacion-de-eventos-en-javascript)
 - [ES6 by Carlos Azaustre](https://carlosazaustre.es/ecmascript6/)
+- [Js docs](http://usejsdoc.org/)
 
 #### Original features
 - ES6
