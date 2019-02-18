@@ -6,7 +6,7 @@ Esta es la clásica aplicación llamada Cat Clicker!
 
 ![screenshot](other/cat-clicker-screen-shot.png)
 
-#### Cómo funciona
+### Cómo funciona
 
 Simplemente del menú elige el nombre de tu gato favorito para ver su foto y clicarla tantas veces cómo quieras! 🐱
 
