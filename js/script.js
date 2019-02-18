@@ -11,7 +11,6 @@ let templateSlctr = document.querySelector(".main");
  * @return {string} - HTML template
  */
 function kittenTemplate(name, url, clicks) {
-  console.log('function clicks', clicks);
   return `<article class="kitten">
     <p> Meet ${name} the kitten!</p>
     <img class="${name}Pic" src="${url}" alt="${name }the Kitten" id="${name}">
@@ -27,6 +26,11 @@ function getNumberOfClicks(name) {
     }
   })
   return numberofClicks;
+}
+
+updateKittenList = () => {
+  const navbarContent = kittenList.map(kitten => `<li data-url="${kitten.url}" data-name="${kitten.name}"><span class="kitty-count">${kitten.clicks}</span> ${kitten.name} 🐱</li>`).join("");
+  kittenListSlctr.innerHTML = navbarContent;
 }
 
 const kittenList = [{
@@ -57,23 +61,23 @@ const kittenList = [{
 ];
 
 const kittenListSlctr = document.querySelector(".navbar ul");
-const navbarContent = kittenList.map(kitten => `<li data-url="${kitten.url}" data-name="${kitten.name}">${kitten.name} 🐱</li>`).join("");
-kittenListSlctr.innerHTML = navbarContent;
-
 
 // Events
 
 // Click counter
 document.querySelector('.main').addEventListener('click', evt => {
   if(evt.target.nodeName === 'IMG') {
-        const countSlctr = event.target.parentNode.querySelector(".count")
-        let counter = parseInt(countSlctr.innerText);
-        countSlctr.innerText = counter + 1;
-        kittenList.forEach( kittenObj => {
-          if (kittenObj.name === evt.target.id) {
-            kittenObj.clicks++;
-          }
-        })
+    const countSlctr = event.target.parentNode.querySelector(".count")
+    let counter = parseInt(countSlctr.innerText);
+    countSlctr.innerText = counter + 1;
+    kittenList.forEach( kittenObj => {
+      if (kittenObj.name === evt.target.id) {
+        kittenObj.clicks++;
+      }
+    })
+    kittenList.sort((a, b) => b.clicks - a.clicks);
+    console.log('kittenList', kittenList);
+    updateKittenList();
     }
 });
 
@@ -86,3 +90,6 @@ kittenListSlctr.addEventListener('click', evt => {
     templateSlctr.innerHTML = kittenTemplate(name, url, clicks);
   }
 });
+
+// Execute on init
+updateKittenList();

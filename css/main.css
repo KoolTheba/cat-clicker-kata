@@ -22,7 +22,7 @@ body {
   min-width: 300px;
   margin: 25px 0;
   }
-  
+
   /* NavBar */
 
 .navbar {
@@ -52,11 +52,11 @@ body {
   margin-left: 30px;
   margin-top: 15px;
   }
-  
+
 .navbar li:hover {
   background-color: beige;
   cursor: pointer;
-}  
+}
 
 @media (min-width: 816px) {
   .menuWrapper {
@@ -84,11 +84,16 @@ h1, h2, h3, h4, h5 {
 img {
   width: 70%;
   height: 55%;
-  margin-left: 2rem; 
+  margin-left: 2rem;
   display: block;
   cursor: pointer;
 }
 
 p {
-  margin-left: 2rem; 
+  margin-left: 2rem;
+}
+
+.kitty-count {
+  font-size: 1.2rem;
+  color: #6b7fdb;
 }
