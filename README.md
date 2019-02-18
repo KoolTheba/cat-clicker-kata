@@ -1,6 +1,6 @@
 ## Cat Clicker
 
-#### Contexto 
+### Contexto 
 
 Esta es la clásica aplicación llamada Cat Clicker!
 
@@ -10,7 +10,7 @@ Esta es la clásica aplicación llamada Cat Clicker!
 
 Simplemente del menú elige el nombre de tu gato favorito para ver su foto y clicarla tantas veces cómo quieras! 🐱
 
-#### Para trabajar el kata/requerimientos:
+### Para trabajar el kata/requerimientos:
 
 Haremos un menú (dónde quieras en la pantalla), y partimos de una vista en la que sólo el menú (y quizá un título) se vea.
 
@@ -23,7 +23,7 @@ Estilos: trabaja con la `font-family` que quieras; igual con los colores, tamañ
 Puedes trabajar en Codepen o en local con tus 3 archivos (HTML, CSS, script.js), elige la que más te guste!
 Preferimos evitar cualquier el uso de jQuery ;)
 
-#### Referencias:
+### Referencias:
 
 Trabajaremos la manipulación del DOM, eventos/delegación de eventos y una función sencilla que hace que el contador aumente cada vez que clicamos la foto del gato y que vuelva a cero cuando el nombre del gato en el menú se vuelva a elegir.
 
