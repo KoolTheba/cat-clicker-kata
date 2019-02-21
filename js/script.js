@@ -48,8 +48,8 @@ kittenListSlctr.innerHTML = navbarContent;
 // Events
 
 // Click counter
-document.querySelector('.main').addEventListener('click', function (evt) {
-    if (evt.target.nodeName === 'IMG') {
+document.querySelector('.main').addEventListener('click', evt => {
+  if(evt.target.nodeName === 'IMG') {
         const countSlctr = event.target.parentNode.querySelector(".count")
         let counter = parseInt(countSlctr.innerText);
         countSlctr.innerText = counter + 1;
@@ -57,8 +57,8 @@ document.querySelector('.main').addEventListener('click', function (evt) {
 });
 
 // Menu event
-kittenListSlctr.addEventListener('click', function (evt){
-  if(evt.target.nodeName === 'LI'){
+kittenListSlctr.addEventListener('click', evt => {
+  if(evt.target.nodeName === 'LI') {
     const name = evt.target.dataset.name;
     const url = evt.target.dataset.url;
     templateSlctr.innerHTML = kittenTemplate(name, url);
